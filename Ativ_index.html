@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando a função DOM</title>
+    <style>
+        body {
+            background-color:cornflowerblue;
+            color: white;
+            font: normal 18pt Arial;
+        }
+
+        </style>
+</head>
+<body>
+    <h1> Me tornando um excelente programador </h1>
+    <p>Aprendendo a cada dia</p>
+    <p>Desenvolvendo as habilidades com o <strong>DOM</strong> em Javascript</p>
+    <div id="msg">Clique aqui</div>
+    <br>
+
+    <script>
+       
+        let corpo = document.body
+        let p1 = document .getElementsByTagName('p')[0]
+         window.document.write('Está escrito assim: ' + p1.innerText)
+        p1.style.color= 'black'
+
+        let d = document.querySelector('div #msg')
+        window.document.getElementById('msg').innerText = 'Olá, está funcionando belezinha!!'
+
+
+
+    </script>
+    
+</body>
+</html>
