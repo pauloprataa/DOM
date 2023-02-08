@@ -11,6 +11,30 @@
             color: white;
             font: normal 18pt Arial;
         }
+        .botao{
+            text-align: center;
+            margin-top: 10px;
+        }
+        button{
+            background-color: black;
+            color:white
+        }
+        @keyframes anima{
+            0%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(1.05);
+            }
+        }
+        
+        button:hover{
+            animation-name: anima;
+            animation-duration: 0.9s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
 
         </style>
 </head>
@@ -19,6 +43,11 @@
     <p>Aprendendo a cada dia</p>
     <p>Desenvolvendo as habilidades com o <strong>DOM</strong> em Javascript</p>
     <div id="msg">Clique aqui</div>
+    <div class="botao">
+        <button>Desafio do botão</button>
+
+
+    </div>
     <br>
 
     <script>
